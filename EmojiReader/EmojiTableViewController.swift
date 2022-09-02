@@ -19,7 +19,7 @@ class EmojiTableViewController: UITableViewController {
         self.title = "Emoji Reader"
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
     }
     
     // MARK: - Table view data source
@@ -36,8 +36,8 @@ class EmojiTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "\(indexPath)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "emojiCell", for: indexPath) as! EmojiTableViewCell
+        cell.emojiLabel.text = "😃"
         
         
         return cell
