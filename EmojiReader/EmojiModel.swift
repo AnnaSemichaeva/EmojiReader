@@ -9,5 +9,6 @@ import Foundation
 
 //model of data
 struct Emoji {
-    var 
+    var emoji: String
+    var name: String
 }
