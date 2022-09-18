@@ -9,7 +9,7 @@ import UIKit
 
 class EmojiTableViewController: UITableViewController {
     
-    let objects  = [
+    var objects  = [
         Emoji(emoji: "🥰", name: "Love", description: "Let's love each other", isFavourite: false),
         Emoji(emoji: "⚽️", name: "Football", description: "Let's play football together", isFavourite: false),
         Emoji(emoji: "🐱", name: "Cat", description: "Cat is the cutest animal", isFavourite: false)
@@ -54,9 +54,8 @@ class EmojiTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            print("123")
-        } else {
-            print("321")
+            objects.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
     
@@ -65,3 +64,4 @@ class EmojiTableViewController: UITableViewController {
     
     
 }
+        
