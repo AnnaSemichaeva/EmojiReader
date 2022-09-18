@@ -63,7 +63,9 @@ class EmojiTableViewController: UITableViewController {
         return true
     }
     
-    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        
+    }
     
 }
         
