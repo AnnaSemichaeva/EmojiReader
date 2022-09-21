@@ -86,8 +86,8 @@ class EmojiTableViewController: UITableViewController {
         return action
     }
     
-    func favouriteAction(at indexPach: IndexPath) -> UIContextualAction {
-        var object = objects[indexPach.row]
+    func favouriteAction(at indexPath: IndexPath) -> UIContextualAction {
+        var object = objects[indexPath.row]
         let action = UIContextualAction(style: .normal, title: "Favourite") { (action, view, completion) in
             object.isFavourite = !object.isFavourite
             self.objects[indexPach.row] = object
