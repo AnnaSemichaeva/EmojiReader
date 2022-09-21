@@ -71,7 +71,8 @@ class EmojiTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let done = doneAction(at: indexPath)
-        return UISwipeActionsConfiguration(actions: [done])
+        let favourite = favouriteAction(at: indexPath)
+        return UISwipeActionsConfiguration(actions: [done, favourite])
     }
     
     func doneAction(at indexPath: IndexPath) -> UIContextualAction {
@@ -82,6 +83,18 @@ class EmojiTableViewController: UITableViewController {
         }
         action.backgroundColor = .systemGreen
         action.image = UIImage(systemName: "checkmark.circle")
+        return action
+    }
+    
+    func favouriteAction(at indexPach: IndexPath) -> UIContextualAction {
+        var object = objects[indexPach.row]
+        let action = UIContextualAction(style: .normal, title: "Favourite") { (action, view, completion) in
+            object.isFavourite = !object.isFavourite
+            self.objects[indexPach.row] = object
+            completion(true)
+        }
+        action.backgroundColor = object.isFavourite ? .systemPurple : .systemGray
+        action.image = UIImage(systemName: "heart")
         return action
     }
     
