@@ -90,7 +90,7 @@ class EmojiTableViewController: UITableViewController {
         var object = objects[indexPath.row]
         let action = UIContextualAction(style: .normal, title: "Favourite") { (action, view, completion) in
             object.isFavourite = !object.isFavourite
-            self.objects[indexPach.row] = object
+            self.objects[indexPath.row] = object
             completion(true)
         }
         action.backgroundColor = object.isFavourite ? .systemPurple : .systemGray
