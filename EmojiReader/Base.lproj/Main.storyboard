@@ -194,7 +194,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="L2o-Sh-Pd4">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="6qr-ih-EoB"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="qk1-wH-abP"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" style="done" id="qk1-wH-abP"/>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="5I1-I2-CFm" id="rmJ-O9-pg5"/>
