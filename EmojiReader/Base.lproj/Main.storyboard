@@ -192,7 +192,15 @@
                             <outlet property="delegate" destination="dyp-3N-9tl" id="XLC-bC-UbP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="L2o-Sh-Pd4"/>
+                    <navigationItem key="navigationItem" id="L2o-Sh-Pd4">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="6qr-ih-EoB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="qk1-wH-abP"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="5I1-I2-CFm" id="rmJ-O9-pg5"/>
+                        <outlet property="emojiTextField" destination="zqs-ep-P8B" id="jPB-4z-jqV"/>
+                        <outlet property="nameTextField" destination="SxT-r4-DeP" id="VmL-Si-awn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dvq-E9-VV8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
