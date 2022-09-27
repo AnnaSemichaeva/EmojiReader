@@ -12,21 +12,16 @@ class NewEmojiTableViewController: UITableViewController {
     
     
     @IBOutlet weak var emojiTextField: UITextField!
-    
     @IBOutlet weak var nameTextField: UITextField!
-    
     @IBOutlet weak var descriptionTextField: UITextField!
     
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
 
+    @IBAction func textChanged(_ sender: UITextField) {
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
