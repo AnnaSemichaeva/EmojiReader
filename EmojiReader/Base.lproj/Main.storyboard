@@ -153,7 +153,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="textChanged:" destination="dyp-3N-9tl" eventType="editingDidEnd" id="AU4-jz-BNB"/>
+                                                        <action selector="textChanged:" destination="dyp-3N-9tl" eventType="editingChanged" id="0Np-Mz-rec"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -181,7 +181,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="textChanged:" destination="dyp-3N-9tl" eventType="editingDidEnd" id="8pE-3r-lu4"/>
+                                                        <action selector="textChanged:" destination="dyp-3N-9tl" eventType="editingChanged" id="0Em-IO-H2y"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -209,6 +209,7 @@
                         <outlet property="descriptionTextField" destination="5I1-I2-CFm" id="rmJ-O9-pg5"/>
                         <outlet property="emojiTextField" destination="zqs-ep-P8B" id="jPB-4z-jqV"/>
                         <outlet property="nameTextField" destination="SxT-r4-DeP" id="VmL-Si-awn"/>
+                        <outlet property="saveButton" destination="qk1-wH-abP" id="9De-hX-Ydr"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dvq-E9-VV8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
