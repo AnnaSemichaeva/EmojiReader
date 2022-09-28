@@ -19,6 +19,8 @@ class NewEmojiTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateSaveButtonState()
 
     }
     
@@ -31,6 +33,7 @@ class NewEmojiTableViewController: UITableViewController {
     }
 
     @IBAction func textChanged(_ sender: UITextField) {
+        updateSaveButtonState()
     }
     
     
