@@ -21,7 +21,6 @@ class NewEmojiTableViewController: UITableViewController {
         super.viewDidLoad()
         
         updateUI()
-        
         updateSaveButtonState()
         
     }
