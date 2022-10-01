@@ -82,6 +82,7 @@
                                     <outlet property="descriptionLabel" destination="5Pe-be-5gh" id="lZa-JK-LW7"/>
                                     <outlet property="emojiLabel" destination="hcP-5L-7iy" id="cci-dM-YTy"/>
                                     <outlet property="nameLabel" destination="G6S-bM-5qs" id="FJY-Rp-8N8"/>
+                                    <segue destination="IOA-dk-TB7" kind="show" identifier="editEmoji" id="nb0-uO-ORY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -107,7 +108,7 @@
             <objects>
                 <tableViewController id="dyp-3N-9tl" customClass="NewEmojiTableViewController" customModule="EmojiReader" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="caO-88-S48">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.69266566797767926" green="0.69510034890163785" blue="0.70240439167351365" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
@@ -232,7 +233,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="E4k-Gy-Ct5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mcq-9C-Qrt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -245,6 +246,9 @@
             <point key="canvasLocation" x="1480" y="113"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nb0-uO-ORY"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
