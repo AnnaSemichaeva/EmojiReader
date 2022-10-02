@@ -33,10 +33,15 @@ class EmojiTableViewController: UITableViewController {
         let sourceVC = segue.source as! NewEmojiTableViewController
         let emoji = sourceVC.emoji
         
-        let newIndexPath = IndexPath(row: objects.count, section: 0)
-        objects.append(emoji)
-        
-        tableView.insertRows(at: [newIndexPath], with: .fade)
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+            objects[selectedIndexPath.row] = emoji
+            tableView.reloadRows(at: [selectedIndexPath], with: .fade)
+        } else {
+            let newIndexPath = IndexPath(row: objects.count, section: 0)
+            objects.append(emoji)
+            
+            tableView.insertRows(at: [newIndexPath], with: .fade)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
